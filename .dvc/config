@@ -1,0 +1,5 @@
+[core]
+    analytics = false
+    remote = remote_storage
+['remote "remote_storage"']
+    url = D:/OneDrive - Acer/src/oaa/py/exer/dvc/dvc_remote
