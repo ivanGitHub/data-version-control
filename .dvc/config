@@ -1,7 +1,7 @@
 [core]
     analytics = false
-    remote = remote_storage
-[cache]
-    dir = D:/OneDrive - Acer/src/oaa/py/exer/dvc/dvc_shared_cache
-['remote "remote_storage"']
-    url = D:/OneDrive - Acer/src/oaa/py/exer/dvc/dvc_remote
+    remote = aiforge-storage
+['remote "aiforge-storage"']
+    url = ssh://10.36.169.226/root/notebooks/groups/KR7150/dvc_repo/exer/dvc
+    user = root
+    port = 30172

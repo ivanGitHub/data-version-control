@@ -28,18 +28,33 @@ stages:
       size: 1372
     outs:
     - path: model\model.joblib
+<<<<<<< Updated upstream
       md5: 3c56c64fe24570d655c8a9fcaef56327
       size: 241076
+=======
+      md5: 31c28496a2ae0fe8ed55e2a40bd9798c
+      size: 1656040
+>>>>>>> Stashed changes
   evaluate:
     cmd: python src\evaluate.py
     deps:
     - path: model\model.joblib
+<<<<<<< Updated upstream
       md5: 3c56c64fe24570d655c8a9fcaef56327
       size: 241076
+=======
+      md5: 31c28496a2ae0fe8ed55e2a40bd9798c
+      size: 1656040
+>>>>>>> Stashed changes
     - path: src\evaluate.py
       md5: b197277667d6269271fff4ae4af8a941
       size: 668
     outs:
     - path: metrics\accuracy.json
+<<<<<<< Updated upstream
       md5: 5ad59eff4093296d2f88765627c4cd47
       size: 31
+=======
+      md5: 6fc3100ccb6e799bf6ea6a21eb6dc1e1
+      size: 32
+>>>>>>> Stashed changes
