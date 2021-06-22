@@ -1,5 +1,7 @@
 [core]
     analytics = false
     remote = remote_storage
+[cache]
+    dir = D:/OneDrive - Acer/src/oaa/py/exer/dvc/dvc_shared_cache
 ['remote "remote_storage"']
     url = D:/OneDrive - Acer/src/oaa/py/exer/dvc/dvc_remote
