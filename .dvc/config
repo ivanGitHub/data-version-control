@@ -1,7 +1,9 @@
 [core]
     analytics = false
-    remote = aiforge-storage
-['remote "aiforge-storage"']
-    url = ssh://10.36.169.226/root/notebooks/groups/KR7150/dvc_repo/exer/dvc
-    user = root
-    port = 30172
+    remote = sandisk_storage_1
+[cache]
+    dir = E:/dev_repo/exer/dvc_shared_cache
+['remote "sandisk_storage_1"']
+    url = E:/dev_repo/exer/dvc_repo_1
+['remote "sandisk_storage_2"']
+    url = E:/dev_repo/exer/dvc_repo_2

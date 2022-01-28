@@ -1,15 +1,24 @@
-# Data Version Control Tutorial
+# setup 
+- conda isntall dvc
+- conda install -c conda-forge dvc-ssh
+- dvc init (top-level fodler of the repo)
+- dvc config core.analytics false
+- dvc cache dir path/to/shared_cache 
+- dvc remote add -d remote_storage path/to/your/dvc_remote
 
-Example repository for the [Data Version Control With Python and DVC](https://realpython.com/python-data-version-control/) article on [Real Python](https://realpython.com/).
+# structure
+- -- data/
+-   -- prepared/
+-   -- raw/
+- -- metrics/
+- -- model/
+- -- src/
+-   -- evaluate.py
+-   -- prepare.py
+-   -- train.py
 
-To use this repo as part of the tutorial, you first need to get your own copy. Click the _Fork_ button in the top-right corner of the screen, and select your private account in the window that pops up. GitHub will create a forked copy of the repository under your account.
-
-Clone the forked repository to your computer with the `git clone` command
-
-```console
-git clone git@github.com:YourUsername/data-version-control.git
-```
-
-Make sure to replace `YourUsername` in the above command with your actual GitHub username.
-
-Happy coding!
+# remote storage setting
+- dvc remote add --default aiforge-storage ssh://10.36.169.226/root/notebooks/groups/KR7150/dvc_repo/exer/dvc
+- dvc remote modify aiforge-storage user root
+- dvc remote modify aiforge-storage port 30172
+- dvc remote modify --local aiforge-storage password aiforge
