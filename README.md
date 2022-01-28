@@ -6,6 +6,20 @@
 - dvc cache dir path/to/shared_cache 
 - dvc remote add -d remote_storage path/to/your/dvc_remote
 
+# Tracking files
+- git checkout -b 'tracking_commit_name'
+- dvc init
+- dvc config core.analytics false
+- dvc cache dir path/to/shared_cache 
+- dvc remote add -d remote_storage path/to/your/dvc_remote
+- dvc add data/raw/trin
+- dvc add data/raw/val
+- git add --all 
+- git commit -m 'tracking files commit'
+- dvc push
+- git push --set-upstream origin tracking_commit_name
+
+
 # structure
 - -- data/
 -   -- prepared/
